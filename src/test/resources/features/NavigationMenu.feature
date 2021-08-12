@@ -1,4 +1,4 @@
-@navigate @smoke
+@navigate
 Feature: Navigation Menu
 
   Scenario: Navigating Fleet -- Vehicles
@@ -13,6 +13,7 @@ Feature: Navigation Menu
     When the user navigates to Marketing, Campaigns
     Then title should be Campaigns
 
+  @smoke
   Scenario: Navigating Activities -- Calendar Events
     Given the user is on the login page
     And the user enters the sales manager information
